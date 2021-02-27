@@ -61,3 +61,15 @@ http://localhost:8080/api/files?type=jpg
 
 http://localhost:8080/api/files?date=2021-02-26
 
+
+## Docker and Laravel Sail
+
+This project is using Laravel 8, so it runs on Docker with the support of Laravel Sail package.
+
+Laravel Sail document: https://laravel.com/docs/8.x/sail
+
+The step to start this project on your machine:
+
+1. Insall Sail package: **composer require laravel/sail --dev**
+2. Run **./vendor/bin/sail up** to start the application
+3. The file **docker-compose.yml** and **docker/7.4/Dockerfile** can be customize to fit your need. After changing the file, run **sail build --no-cache** to rebuild the application with new settings
